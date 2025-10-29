@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         color: bgColor,
         child: Center(
-          child: Container(
+          child: SizedBox(
             width: 300,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -53,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   "BMI",
                   style: TextStyle(fontSize: 34, fontWeight: FontWeight.w700),
                 ),
+                // 3 field
                 TextField(
                   controller: wtController,
                   decoration: InputDecoration(
@@ -62,6 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   keyboardType: TextInputType.number,
                 ),
                 SizedBox(height: 21),
+
                 TextField(
                   controller: ftController,
                   decoration: InputDecoration(
